@@ -64,6 +64,7 @@
 		E2E73FB42371773100F8AB92 = {
 			isa = PBXGroup;
 			children = (
+				E2E73FE02371C9D100F8AB92 /* Classes */,
 				E2E73FBF2371773100F8AB92 /* BQFMDBHelper */,
 				E2E73FBE2371773100F8AB92 /* Products */,
 				FADDD959FE89540E9827F026 /* Pods */,
@@ -82,7 +83,6 @@
 		E2E73FBF2371773100F8AB92 /* BQFMDBHelper */ = {
 			isa = PBXGroup;
 			children = (
-				E2E73FD9237179FB00F8AB92 /* Files */,
 				E2E73FDE23717A2C00F8AB92 /* Student.h */,
 				E2E73FDD23717A2C00F8AB92 /* Student.m */,
 				E2E73FC02371773100F8AB92 /* AppDelegate.h */,
@@ -100,13 +100,13 @@
 			path = BQFMDBHelper;
 			sourceTree = "<group>";
 		};
-		E2E73FD9237179FB00F8AB92 /* Files */ = {
+		E2E73FE02371C9D100F8AB92 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				E2E73FDB23717A2300F8AB92 /* BQFMDBHelper.h */,
 				E2E73FDA23717A2300F8AB92 /* BQFMDBHelper.m */,
 			);
-			path = Files;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		FADDD959FE89540E9827F026 /* Pods */ = {
