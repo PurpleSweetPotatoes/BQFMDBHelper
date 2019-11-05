@@ -9,7 +9,7 @@
     
 
 #import "BQFMDBHelper.h"
-#import <FMDB.h>
+#import <FMDB/FMDB.h>
 
 @interface BQFMDBHelper ()
 @property (nonatomic, strong) FMDatabase * db;
