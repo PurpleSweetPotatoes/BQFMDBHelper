@@ -83,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				E2E73FD9237179FB00F8AB92 /* Files */,
+				E2E73FDE23717A2C00F8AB92 /* Student.h */,
+				E2E73FDD23717A2C00F8AB92 /* Student.m */,
 				E2E73FC02371773100F8AB92 /* AppDelegate.h */,
 				E2E73FC12371773100F8AB92 /* AppDelegate.m */,
 				E2E73FC32371773100F8AB92 /* SceneDelegate.h */,
@@ -103,8 +105,6 @@
 			children = (
 				E2E73FDB23717A2300F8AB92 /* BQFMDBHelper.h */,
 				E2E73FDA23717A2300F8AB92 /* BQFMDBHelper.m */,
-				E2E73FDE23717A2C00F8AB92 /* Student.h */,
-				E2E73FDD23717A2C00F8AB92 /* Student.m */,
 			);
 			path = Files;
 			sourceTree = "<group>";
