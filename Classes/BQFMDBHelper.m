@@ -82,14 +82,14 @@ static NSMutableDictionary * dbInfo;
 #pragma mark - 表内操作
 
 - (NSArray *)lookUpInfo:(Class)cls {
-    return [self lookUpInfo:cls sql:@""];
+    return [self lookUpInfo:cls where:@""];
 }
 
-- (NSArray *)lookUpInfo:(Class)cls sql:(NSString *)sql {
+- (NSArray *)lookUpInfo:(Class)cls where:(NSString *)whereSql {
 
     NSString * query = [NSString stringWithFormat:@"SELECT * FROM t_%@",NSStringFromClass(cls)];
-    if (sql.length > 0) {
-        query = [NSString stringWithFormat:@"%@ WHERE %@",query, sql];
+    if (whereSql.length > 0) {
+        query = [NSString stringWithFormat:@"%@ WHERE %@",query, whereSql];
     }
     FMResultSet * result = [self.db executeQuery:query];
     NSDictionary * dic = [cls propertyTypes];

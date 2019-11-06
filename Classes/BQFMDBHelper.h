@@ -12,6 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark - sqlite valueType
 
 static NSString * const kFMDBTypeText = @"TEXT";
 static NSString * const kFMDBTypeInt = @"INTEGER";
@@ -19,8 +20,13 @@ static NSString * const kFMDBTypeFloat = @"REAL";
 static NSString * const kFMDBTypeBool = @"BLOB";
 
 
+#pragma mark - sqlite model
+
+///新建model继承自SqlModelm，通过BQFMDBHelper进行增删改查
 @interface SqlModel : NSObject
+
 @property (nonatomic, assign) NSInteger  keyId;
+
 /*
  TEXT : 文本类型
  INTEGER : 数字类型
@@ -33,6 +39,7 @@ static NSString * const kFMDBTypeBool = @"BLOB";
 
 @class FMDatabase;
 
+///快捷操作fmdb
 @interface BQFMDBHelper : NSObject
 
 @property (nonatomic, readonly, strong) FMDatabase * db;
@@ -57,8 +64,8 @@ static NSString * const kFMDBTypeBool = @"BLOB";
 
 - (NSArray *)lookUpInfo:(Class)cls;
 
-/// @param sql 查询条件: 例如 age = 18
-- (NSArray *)lookUpInfo:(Class)cls sql:(NSString *)sql;
+/// @param whereSql 查询条件: 例如 age = 18
+- (NSArray *)lookUpInfo:(Class)cls where:(NSString *)whereSql;
 
 - (BOOL)insertInfo:(SqlModel *)objc;
 

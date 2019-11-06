@@ -362,7 +362,6 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
-					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = BQFMDBHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -387,7 +386,6 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
-					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = BQFMDBHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
